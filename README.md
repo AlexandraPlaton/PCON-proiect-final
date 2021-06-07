@@ -6,7 +6,23 @@ folosind OSC si un display cu touchscreen.
 ## (Instalare)
 1. Am avut nevoie de un modul RPi, o tastatura, un mouse, un monitor, un display cu touchscreen.
 (vezi linkuri) + un card SD pe care sa pun imaginea sistemului de operare pentru RPi
-...
+
+2. Am formatat cardul SD cu imaginea de OS. Versiunea de Raspbian folosita:
+![](assets/rpi_os.PNG)
+
+3. La prima pornire a RPi am conectat un display, tastatura si mouse pentru a face setarile necesare
+pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am activat SSH-ul.
+
+4. Pe laptop mi-am instalat PuTTY pentru a controla in  reteta RPi-ul. 
+[link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
+
+5. [Instalare Node.js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
++ instalare libcairo2-dev : sudo apt-get install libcairo2-dev
+
+6. Descarcare repository OSC Examples:
+git clone https://github.com/toddtreece/osc-examples.git
+cd osc-examples
+npm install
 
 ## (Utilizare)
 tbd
