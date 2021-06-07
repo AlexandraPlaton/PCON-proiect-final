@@ -21,7 +21,9 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 
 6. Descarcare repository OSC Examples:
 git clone https://github.com/toddtreece/osc-examples.git
+
 cd osc-examples
+
 npm install
 
 ## (Utilizare)
