@@ -6,7 +6,42 @@ folosind OSC si un display cu touchscreen.
 ## (Instalare)
 1. Am avut nevoie de un modul RPi, o tastatura, un mouse, un monitor, un display cu touchscreen.
 (vezi linkuri) + un card SD pe care sa pun imaginea sistemului de operare pentru RPi
-...
+
+2. Am formatat cardul SD cu imaginea de OS. Versiunea de Raspbian folosita:
+![](assets/rpi_os.PNG)
+
+3. La prima pornire a RPi am conectat un display, tastatura si mouse pentru a face setarile necesare
+pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am activat SSH-ul.
+
+4. Pe laptop mi-am instalat PuTTY pentru a controla in  reteta RPi-ul. 
+[link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
+
+5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
+sudo rm -rf LCD-show
+git clone https://github.com/goodtft/LCD-show.git
+chmod -R 755 LCD-show
+cd LCD-show/
+sudo ./LCD35-show
+
+Deoarece axele X si Y pe display-ul cu touch erau inversate, a trebuit sa modific o setare:
+cd /etc/X1/xorg.conf.d
+sudo nano 99-calibration.conf
+
+![](assets/calibration.PNG)
+
+am modificat swapaxes din 1 in 0
+
+6. [Instalare Node.js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
++ instalare libcairo2-dev : sudo apt-get install libcairo2-dev
+
+7. Descarcare repository OSC Examples:
++ git clone https://github.com/toddtreece/osc-examples.git
+
++ cd osc-examples
+
++ npm install
+
+
 
 ## (Utilizare)
 tbd
