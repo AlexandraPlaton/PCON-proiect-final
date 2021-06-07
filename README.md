@@ -16,15 +16,32 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 4. Pe laptop mi-am instalat PuTTY pentru a controla in  reteta RPi-ul. 
 [link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
-5. [Instalare Node.js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
+5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
+sudo rm -rf LCD-show
+git clone https://github.com/goodtft/LCD-show.git
+chmod -R 755 LCD-show
+cd LCD-show/
+sudo ./LCD35-show
+
+Deoarece axele X si Y pe display-ul cu touch erau inversate, a trebuit sa modific o setare:
+cd /etc/X1/xorg.conf.d
+sudo nano 99-calibration.conf
+
+![](assets/calibration.PNG)
+
+am modificat swapaxes din 1 in 0
+
+6. [Instalare Node.js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
 + instalare libcairo2-dev : sudo apt-get install libcairo2-dev
 
-6. Descarcare repository OSC Examples:
-git clone https://github.com/toddtreece/osc-examples.git
+7. Descarcare repository OSC Examples:
++ git clone https://github.com/toddtreece/osc-examples.git
 
-cd osc-examples
++ cd osc-examples
 
-npm install
++ npm install
+
+
 
 ## (Utilizare)
 tbd
