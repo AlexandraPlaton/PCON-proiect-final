@@ -17,7 +17,6 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 [link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
 5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
-sudo rm -rf LCD-show
 git clone https://github.com/goodtft/LCD-show.git
 chmod -R 755 LCD-show
 cd LCD-show/
