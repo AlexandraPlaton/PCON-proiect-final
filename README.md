@@ -54,8 +54,11 @@ in zona respectiva se genereaza un sunet corespunzator in max, mesajul fiind tra
 catre Max. Sunetele pot fi inlocuite in Max.
 
 Cum functioneaza:
+
 [Sine](https://www.youtube.com/watch?v=OIpXnWo-a6E)
+
 [Sample Sound](https://www.youtube.com/watch?v=UqsUNnRw0OE)
+
 
 
 ## (Istoric)
