@@ -1,31 +1,47 @@
 # adapted from https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
 
-# put *your* name here
-name:
+name:Alexandra Platon
 
 declaration: >-
   I declare that everything I have submitted in this assignment is entirely my
   own work, with the following exceptions:
 
-
-# add as many "name+comment" entries as necessary
-# (or remove it altogether if you haven't collaborated with anyone)
-collaboration:
-  - name:
-    comment: >-
-      
-
-# add as many "url+licence+comment" entries as necessary
-# (or remove it altogether if you haven't used any external code)
 code:
-  - comment:
-    url:
+  - comment:OSC with RPi
+    url:https://learn.adafruit.com/raspberry-pi-open-sound-control/overview
     licence:
 
-
-# add as many "url+licence+comment" entries as necessary
-# (or remove it altogether if you haven't used any external assets)
 assets:
-  - comment:
-    url:
+  - comment:Osc-Examples
+    url:https://github.com/toddtreece/osc-examples.git
+    licence:
+
+assets:
+  - comment:Osc-Examples
+    url:https://github.com/toddtreece/osc-examples.git
+    licence:
+
+assets:
+  - comment:OscP5 Processing Examples
+    url:http://www.sojamo.de/libraries/oscp5/
+    licence:
+
+assets:
+  - comment:Split Screen Processing
+    url:https://forum.processing.org/one/topic/scale-divide-screen-into-four-areas.html
+    licence:
+
+assets:
+  - comment:Mouse Functions Processing
+    url:https://processing.org/examples/mousefunctions.html
+    licence:
+
+assets:
+  - comment:Processing Examples
+    url:https://processing.org/examples/
+    licence:
+
+assets:
+  - comment:Display Configuration
+    url:http://www.lcdwiki.com/3.5inch_RPi_Display
     licence:

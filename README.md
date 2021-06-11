@@ -7,8 +7,7 @@ folosind OSC si un display cu touchscreen.
 1. Am avut nevoie de un modul RPi, o tastatura, un mouse, un monitor, un display cu touchscreen.
 (vezi linkuri) + un card SD pe care sa pun imaginea sistemului de operare pentru RPi
 
-2. Am formatat cardul SD cu imaginea de OS. Versiunea de Raspbian folosita:
-![](assets/rpi_os.PNG)
+2. Am formatat cardul SD cu imaginea de OS de [aici](https://pi.processing.org/download/).
 
 3. La prima pornire a RPi am conectat un display, tastatura si mouse pentru a face setarile necesare
 pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am activat SSH-ul.
@@ -17,34 +16,47 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 [link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
 5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
-sudo rm -rf LCD-show
-git clone https://github.com/goodtft/LCD-show.git
-chmod -R 755 LCD-show
-cd LCD-show/
-sudo ./LCD35-show
+
+*sudo rm -rf LCD-show*
+
+*git clone https://github.com/goodtft/LCD-show.git*
+
+*chmod -R 755 LCD-show*
+
+*cd LCD-show/*
+
+*sudo ./LCD35-show*
 
 Deoarece axele X si Y pe display-ul cu touch erau inversate, a trebuit sa modific o setare:
-cd /etc/X1/xorg.conf.d
-sudo nano 99-calibration.conf
+
+*cd /etc/X1/xorg.conf.d*
+
+*sudo nano 99-calibration.conf*
 
 ![](assets/calibration.PNG)
 
 am modificat swapaxes din 1 in 0
 
-6. [Instalare Node.js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
-+ instalare libcairo2-dev : sudo apt-get install libcairo2-dev
 
-7. Descarcare repository OSC Examples:
-+ git clone https://github.com/toddtreece/osc-examples.git
+6. (OPTIONAL) Descarcare repository OSC Examples: (care se alfla in folderul *project_draft*;
+de aici am luat structura proiectului)
 
-+ cd osc-examples
+*git clone https://github.com/toddtreece/osc-examples.git*
 
-+ npm install
+*cd osc-examples*
 
-
+*npm install*
 
 ## (Utilizare)
-tbd
+*sine.maxpat* genereaza un sinus ce isi schimba frecventa in functie de pozitia axei X a touch-ului. 
+*sample_sound.maxpat* imparte ecranul in 4 zone - fiecare corespunde cu cate un sample de kick/snare/hi-hat/clave. Astfel, la detectarea unui touch
+in zona respectiva se genereaza un sunet corespunzator in max, mesajul fiind transmis prin OSC de la RPi
+catre Max. Sunetele pot fi inlocuite in Max.
+
+Cum functioneaza:
+[Sine](https://www.youtube.com/watch?v=OIpXnWo-a6E)
+[Sample Sound](https://www.youtube.com/watch?v=UqsUNnRw0OE)
+
 
 ## (Istoric)
 
@@ -68,11 +80,18 @@ a canta diferite sunete salvate in Max.
 (7.06) Voi introduce modulul de camera in proiect si voi modifica/adauga anumiti parametri
 pentru a avea partea de originalitate in proiect.
 
-...
+(11.06) Am folosit Processing pentru a finaliza proiectul, intrucat [Proiectul de referinta](https://learn.adafruit.com/raspberry-pi-open-sound-control/overview)
+nu a fost compatibil cu hardware-ul pe care il am eu.
+
+Am creat doua patch-uri: *sine.maxpat* si *sample_sound.maxpat*.   
 
 ## (Link-uri)
 [Proiectul de referinta](https://learn.adafruit.com/raspberry-pi-open-sound-control/overview)  
 [Exemplu cod Max - Github](https://github.com/toddtreece/osc-examples/tree/master/max)  
 [Display](https://cleste.ro/touchscreen-lcd-3-5-raspberry-pi.html?utm_medium=GoogleAds&utm_campaign=ShoppingAds&utm_source=&gclid=CjwKCAjwnPOEBhA0EiwA609Redt0FJatNi1cETA4rIvLW_SqGVTzwSwQtlyhd4GbRK3dNmiwhXP7jBoCPN4QAvD_BwE)  
 [RPi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)  
-
+[RPI Image Download link](https://pi.processing.org/download/)
+[OscP5 Examples](http://www.sojamo.de/libraries/oscp5/)
+[Split Screen Processing](https://forum.processing.org/one/topic/scale-divide-screen-into-four-areas.html)
+[Mouse Functions Processing](https://processing.org/examples/mousefunctions.html)
+[Processing Examples](https://processing.org/examples/)
