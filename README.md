@@ -13,7 +13,7 @@ folosind OSC si un display cu touchscreen.
 pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am activat SSH-ul.
 
 4. Pe laptop mi-am instalat PuTTY pentru a controla in  reteta RPi-ul. 
-[link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
+5. [link aici](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
 5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
 
