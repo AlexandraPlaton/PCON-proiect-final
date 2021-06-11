@@ -88,10 +88,10 @@ nu a fost compatibil cu hardware-ul pe care il am eu.
 Am creat doua patch-uri: *sine.maxpat* si *sample_sound.maxpat*.   
 
 ## (Link-uri)
-[Proiectul de referinta](https://learn.adafruit.com/raspberry-pi-open-sound-control/overview)  
-[Exemplu cod Max - Github](https://github.com/toddtreece/osc-examples/tree/master/max)  
-[Display](https://cleste.ro/touchscreen-lcd-3-5-raspberry-pi.html?utm_medium=GoogleAds&utm_campaign=ShoppingAds&utm_source=&gclid=CjwKCAjwnPOEBhA0EiwA609Redt0FJatNi1cETA4rIvLW_SqGVTzwSwQtlyhd4GbRK3dNmiwhXP7jBoCPN4QAvD_BwE)  
-[RPi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)  
+[Proiectul de referinta](https://learn.adafruit.com/raspberry-pi-open-sound-control/overview)
+[Exemplu cod Max - Github](https://github.com/toddtreece/osc-examples/tree/master/max)
+[Display](https://cleste.ro/touchscreen-lcd-3-5-raspberry-pi.html?utm_medium=GoogleAds&utm_campaign=ShoppingAds&utm_source=&gclid=CjwKCAjwnPOEBhA0EiwA609Redt0FJatNi1cETA4rIvLW_SqGVTzwSwQtlyhd4GbRK3dNmiwhXP7jBoCPN4QAvD_BwE)
+[RPi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 [RPI Image Download link](https://pi.processing.org/download/)
 [OscP5 Examples](http://www.sojamo.de/libraries/oscp5/)
 [Split Screen Processing](https://forum.processing.org/one/topic/scale-divide-screen-into-four-areas.html)
