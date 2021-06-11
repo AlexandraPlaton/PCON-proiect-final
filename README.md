@@ -16,7 +16,6 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 [link aici] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
 5.Configurare display: [display folosit](http://www.lcdwiki.com/3.5inch_RPi_Display)
-<<<<<<< HEAD
 
 *sudo rm -rf LCD-show*
 
@@ -27,12 +26,6 @@ pentru mai tarziu. L-am conectat la reteaua de internet iar din configuratii am 
 *cd LCD-show/*
 
 *sudo ./LCD35-show*
-=======
-git clone https://github.com/goodtft/LCD-show.git
-chmod -R 755 LCD-show
-cd LCD-show/
-sudo ./LCD35-show
->>>>>>> 751bf0d74547c5edfec849d2726683b19c73c01b
 
 Deoarece axele X si Y pe display-ul cu touch erau inversate, a trebuit sa modific o setare:
 
